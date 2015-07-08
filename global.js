@@ -12,3 +12,13 @@ choice = document.getElementById("choices");
 
 quest.innerText = question1.question;
 choice.innerText = question1.possibleAnswers;
+
+
+// function given_answer() {
+//  document.getElementById('answer').value
+// }
+
+function given_answer() {
+    answer = document.getElementById("answer").value;
+    console.log(document.getElementById("answer").value);
+}
