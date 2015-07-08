@@ -58,6 +58,8 @@ function next_question() {
 function clear_fields() {
   document.getElementById("answer").value = null;
   document.getElementById("question_result").innerText = "";
+  document.getElementById("question").innerText = "";
+  document.getElementById("choices").innerText = "";
 }
 
 function set_next_question(count) {
