@@ -20,7 +20,8 @@ choice.innerText = questionsArray[count].possibleAnswers;
 
 
 function given_answer() {
-    return document.getElementById("answer").value.toUpperCase();
+    var answer = document.getElementById("answer").value.toUpperCase();
+    update_question_result(is_correct_answer(answer));
 }
 
 function is_correct_answer(answer_text) {
@@ -40,10 +41,10 @@ function update_question_result(correct) {
   }
 }
 
-function process_answer_submission() {
-  var user_answer = given_answer();
-  update_question_result(is_correct_answer(user_answer));
-}
+// function process_answer_submission() {
+//   var user_answer = given_answer();
+//   update_question_result(is_correct_answer(user_answer));
+// }
 
 function next_question() {
   count++
